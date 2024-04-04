@@ -25,6 +25,7 @@
         Masculino<input type="radio" name="teste">
 
         <button onclick="cadastrar()">Cadastrar</button>
+        <div id="div_msg"></div>
     </center>
 
 </body>
@@ -36,9 +37,12 @@
         var Nome= input_nome.value
         var Email= input_email.value
         var senha = input_senha.value
-        var genero= input_genero.value
 
-        
+        if(cadastrar){
+            div_msg.innerHTML = `Cadastro Realizado com Sucesso`
+        }
+
+
     }
 
 
