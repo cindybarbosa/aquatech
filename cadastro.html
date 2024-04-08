@@ -4,49 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
     <title>Document</title>
 </head>
 
 <body>
-    <center>
-        <h1>Estamos na Tela de Cadastro</h1>
-        Nome: <input type="text" id="input_nome">
-        <br>
-        <br>
-        Email: <input type="text" id="input_email">
-        <br>
-        <br>
-        Senha: <input type="password" id="input_senha">
-        <br>
-        <br>
-        Gênero: Feminino<input type="radio" name="teste">
-        <br>
-        <br>
-        Masculino<input type="radio" name="teste">
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo"> Aquatech</h1>
+            <ul class="navbar">
+                <li> Iniciar </li>
+                <li> Simulador </li>
+                <li> | </li>
 
-        <button onclick="cadastrar()">Cadastrar</button>
-        <div id="div_msg"></div>
-    </center>
+                <a href="./login.html">
+                    <li> Login </li>
 
+                </a>
+
+                <a href="./cadastro.html">
+                    <li> Cadastro </li>
+                </a>
+
+
+            </ul>
+        </div>
+
+    </div>
+    <div class="banner">
+        <div class="container">
+            <div class="label">
+                <label>
+                    <div class="divtexto">
+                        <h2> <center>Bem-vindo!</center> </h2>
+                        <strong>Nome:</strong> <br> <input type="text" id="input_nome" placeholder="Seu nome"
+                        class="inputs">
+                        <br>
+                        <strong>E-mail:</strong> <br> <input type="text" id="input_email"
+                        placeholder="meuemail@provedor.com" class="inputs">
+                        <br>
+                        <strong>Senha</strong> <br> <input type="password" id="input_senha" placeholder="******" class="inputs">
+                        <br>
+                        <strong>Confirmação de Senha</strong> <br> <input type="password" id="input_confirmacao" placeholder="******" class="inputs ">
+                        <br>
+                    </div>
+                    <button onclick="cadastro()" class="botao">Cadastrar</button>
+                </label>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
-<script>
-    function cadastrar(){
-
-        var Nome= input_nome.value
-        var Email= input_email.value
-        var senha = input_senha.value
-
-        if(cadastrar){
-            div_msg.innerHTML = `Cadastro Realizado com Sucesso`
-        }
-
-
-    }
-
-
-
-
-
-</script>
